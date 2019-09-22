@@ -1,3 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<main role="main" class="inner cover">
+    <h1 class="cover-heading">URL Shortener</h1>
+    <div class="container">
+        <div class="form-group">
+          <label>Input URL</label>
+          <input type="text" class="form-control" [formControl] = "inputUrl" placeholder="please put URL that you want to be shortened here">
+        </div>
+        <button (click)= "onClick()">Shorten it!</button>
+        <div class="form-group">
+          <label>Shortened URL</label>
+          <input type="text" class="form-control" [formControl] = "outputUrl" placeholder="Shortened URL will appear here">
+        </div>
+      </div>
+  </main>
+</div>
 <router-outlet></router-outlet>
